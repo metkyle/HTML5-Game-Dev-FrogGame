@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style type="text/css">
+        #reset{
+            position:absolute;
+            left: 165px;
+            top: 320px;
+            z-index: 100;
+        }
+        #scoreboard{
+            left:10px;
+        }
+    </style>
+
+    <script type="text/javascript"
+            src="./JS/simpleGame.js"></script>
+
+    <script type="text/javascript"
+            src="./JS/fly.js"></script>
+
+    <script type="text/javascript"
+            src="./JS/frog.js"></script>
+
+    <script type="text/javascript"
+            src="./JS/engine.js"></script>
+</head>
+<body onload="init()">
+    <h2>Eat as many flies as you can in 30 seconds!</h2>
+<div id="scoreBoard">Flies Ate: 0</div> <br/>
+<div id="reset">
+    <button type="button" onclick="reset()" id="resetBtn">Reset Game</button>
+</div>
+</body>
+</html>
